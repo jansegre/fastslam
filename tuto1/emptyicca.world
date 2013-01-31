@@ -1,0 +1,80 @@
+include "map.inc"
+include "things.inc"
+include "pioneer.inc"
+include "sick.inc"
+
+window
+( 
+	size [700.000 700.000] 
+	scale 41
+	show_data 1
+)
+
+floorplan
+(
+	
+	bitmap "bitmaps/icca.png"  
+	size [30  4 0.5]
+	obstacle_return 0 
+)
+
+pioneer2dx
+(
+	name "r00"
+	pose [-12.75  -0.25 0 0]
+	fancysicklaser
+	(
+		#habilitar
+	)
+	laser_return 0
+	watchdog_timeout -1.0
+	obstacle_return 0 
+)
+pioneer2dx
+(
+	name "r11"
+	color "yellow"
+	pose [-14  14 0 0]
+	fancysicklaser
+	(
+		#habilitar
+	)
+	laser_return 0
+	watchdog_timeout -1.0
+	obstacle_return 0  
+)
+
+orange(name "black1" pose [-14 1.5 2 0])
+orange(name "black2" pose [-10 1.5 2 0])
+orange(name "black3" pose [-6 1.5  2 0])
+orange(name "black4" pose [-2 1.5  2 0])
+orange(name "black5" pose [  2 1.5  2 0])
+orange(name "black6" pose [  6 1.5 2 0])
+orange(name "black7" pose [ 10 1.5 2 0])
+orange(name "black8" pose [ 14 1.5 2 0])
+orange(name "black9" pose [-14 -1.5 2 0])
+orange(name "black10" pose [-10 -1.5 2 0])
+orange(name "black11" pose [-6 -1.5  2 0])
+orange(name "black12" pose [-2 -1.5  2 0])
+orange(name "black13" pose [  2 -1.5  2 0])
+orange(name "black14" pose [  6 -1.5 2 0])
+orange(name "black15" pose [ 10 -1.5 2 0])
+orange(name "black16" pose [ 14 -1.5 2 0])
+
+#Lm[0][0]= -14; Lm[1][0]=   1.5; Lm[2][0]= 2;
+#Lm[0][1]= -10; Lm[1][1]=   1.5; Lm[2][1]= 2; 
+#Lm[0][2]=  -6; Lm[1][2]=   1.5; Lm[2][2]= 2;
+#Lm[0][3]=  -2; Lm[1][3]=   1.5; Lm[2][3]= 2;
+#Lm[0][4]=   2; Lm[1][4]=   1.5; Lm[2][4]= 2;
+#Lm[0][5]=   6; Lm[1][5]=   1.5; Lm[2][5]= 2;
+#Lm[0][6]=  10; Lm[1][6]=   1.5; Lm[2][6]= 2;
+#Lm[0][7]=  14; Lm[1][7]=   1.5; Lm[2][7]= 2;
+#Lm[0][8]= -14; Lm[1][8]=  -1.5; Lm[2][8]= 2; 
+#Lm[0][9]= -10; Lm[1][9]=  -1.5; Lm[2][9]= 2;
+#Lm[0][10]= -6; Lm[1][10]= -1.5; Lm[2][10]= 2;
+#Lm[0][11]= -2; Lm[1][11]= -1.5; Lm[2][11]= 2;
+#Lm[0][12]=  2; Lm[1][12]= -1.5; Lm[2][12]= 2;
+#Lm[0][13]=  6; Lm[1][13]= -1.5; Lm[2][13]= 2;
+#Lm[0][14]= 10; Lm[1][14]= -1.5; Lm[2][14]= 2;
+#Lm[0][15]= 14; Lm[1][15]= -1.5; Lm[2][15]= 2;
+

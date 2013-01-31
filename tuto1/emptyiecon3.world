@@ -1,0 +1,68 @@
+include "map.inc"
+include "things.inc"
+include "pioneer.inc"
+include "sick.inc"
+
+window
+( 
+	size [700.000 700.000] 
+	scale 41
+	show_data 1
+)
+
+floorplan
+(
+	
+	bitmap "bitmaps/iecon.png"  
+	size [17 10.5 0.5]
+	
+)
+
+pioneer2dx
+(
+	name "r00"
+	pose [-8.25 -0.25 0 0]
+	fancysicklaser
+	(
+		#habilitar
+	)
+	laser_return 0
+	watchdog_timeout -1.0
+	obstacle_return 0 
+)
+pioneer2dx
+(
+	name "r11"
+	color "yellow"
+	pose [-7.25 0.25 0 0]
+	fancysicklaser
+	(
+		#habilitar
+	)
+	laser_return 0
+	watchdog_timeout -1.0
+	obstacle_return 0  
+)
+orange(name "black01" pose [ -3  3 2 0])
+orange(name "black02" pose [ -3 -3 2 0])
+orange(name "black03" pose [  3  4 2 0])
+orange(name "black04" pose [  3 -4 2 0])
+orange(name "black05" pose [ -5  4 2 0])
+orange(name "black06" pose [ -5 -4 2 0])
+orange(name "black07" pose [  5  3 2 0])
+orange(name "black08" pose [  5 -3 2 0])
+orange(name "black09" pose [ -6  1 2 0])
+orange(name "black10" pose [ -6 -1 2 0])
+orange(name "black11" pose [  6  1 2 0])
+orange(name "black12" pose [  6 -1 2 0])
+orange(name "black13" pose [  2  1 2 0])
+orange(name "black14" pose [  2 -1 2 0])
+orange(name "black15" pose [ -2  1 2 0])
+orange(name "black16" pose [ -2 -1 2 0])
+orange(name "black17" pose [ -8  1 2 0])
+orange(name "black18" pose [ -8 -1 2 0])
+orange(name "black19" pose [  8  1 2 0])
+orange(name "black20" pose [  8 -1 2 0])
+
+
+

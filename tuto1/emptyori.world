@@ -1,0 +1,92 @@
+include "map.inc"
+include "things.inc"
+include "pioneer.inc"
+include "sick.inc"
+
+window
+( 
+	size [700.000 700.000] 
+	scale 41
+	show_data 1
+)
+
+floorplan
+(
+	#bitmap "bitmaps/cave+.png" 
+	bitmap "bitmaps/amb3.png"  
+	size [50 50 0.5]
+)
+
+pioneer2dx
+(
+	name "r00"
+	pose [-9.5 -9.5 0 0]
+	fancysicklaser
+	(
+		#habilitar
+	)
+	#ctrl "wander"
+	#localization "gps"
+	#localization_origin [0 0 0 0]
+)
+pioneer2dx
+(
+	name "r11"
+	pose [ 9.5 -9.5 0 0]
+	fancysicklaser
+	(
+		#habilitar
+	)
+	#ctrl "wander"
+	#localization "gps"
+	#localization_origin [0 0 0 0]
+)
+
+orange(name "black0" pose [-3.125 -4.6875 0 0])
+orange(name "black1" pose [-9.375 -4.6875 0 0])
+orange(name "black2" pose [ 3.125 -4.6875 0 0])
+orange(name "black3" pose [ 9.375 -4.6875 0 0])
+orange(name "black4" pose [-1.5625 -3.125  0 0])
+orange(name "black5" pose [-7.8125 -3.125 0 0])
+orange(name "black6" pose [1.5625   -3.125 0 0])
+orange(name "black7" pose [7.8125  -3.125 0 0])
+orange(name "black8" pose [-1.5625  -9.375 0 0])
+orange(name "black9" pose [-7.8125 -9.375 0 0])
+orange(name "black10" pose [1.5625  -9.375 0 0])
+orange(name "black11" pose [7.8125 -9.375 0 0])
+orange(name "black12" pose [-4.6875 -3.125 0 0])
+orange(name "black13" pose [-10.875 -3.125 0 0])
+orange(name "black14" pose [4.6875 -3.125 0 0])
+orange(name "black15" pose [10.875 -3.125 0 0])
+orange(name "black16" pose [-4.6875 -9.375 0 0])
+orange(name "black17" pose [-10.875 -9.375 0 0])
+orange(name "black18" pose [4.6875 -9.375 0 0])
+orange(name "black19" pose [10.875 -9.375 0 0])
+orange(name "black20" pose [-1.5625 -6.250 0 0])
+orange(name "black21" pose [-7.8125 -6.250 0 0])
+orange(name "black22" pose [1.5625  -6.250 0 0])
+orange(name "black23" pose [7.8125 -6.250 0 0])
+orange(name "black24" pose [-4.6875  -6.250 0 0])
+orange(name "black25" pose [-10.875 -6.250 0 0])
+orange(name "black26" pose [4.6875 -6.250 0 0])
+orange(name "black27" pose [10.875 -6.250 0 0])
+orange(name "black28" pose [-3.125 -1.5625 0 0])
+orange(name "black29" pose [-9.375  -1.5625 0 0])
+orange(name "black30" pose [3.125 -1.5625 0 0])
+orange(name "black31" pose [9.375 -1.5625 0 0])
+orange(name "black32" pose [-3.125 -10.875 0 0])
+orange(name "black33" pose [-9.375 -10.875 0 0])
+orange(name "black34" pose [3.125 -10.875 0 0])
+orange(name "black35" pose [9.375 -10.875 0 0])
+orange(name "black36" pose [-3.125 -7.8125 0 0])
+orange(name "black37" pose [-9.375 -7.8125 0 0])
+orange(name "black38" pose [3.125 -7.8125 0 0])
+orange(name "black39" pose [9.375  -7.8125 0 0])
+orange(name "black40" pose [-6.250  -4.5625 0 0])
+orange(name "black41" pose [0 -1.5625 0 0])
+orange(name "black42" pose [6.250 -4.5625 0 0])
+orange(name "black43" pose [-6.250 -1.5625 0 0])
+orange(name "black44" pose [0 -4.5625 0 0])
+orange(name "black45" pose [6.250  -1.5625 0 0])
+
+

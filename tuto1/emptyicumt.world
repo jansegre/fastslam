@@ -1,0 +1,97 @@
+include "map.inc"
+include "things.inc"
+include "pioneer.inc"
+include "sick.inc"
+
+window
+( 
+	size [700.000 700.000] 
+	scale 41
+	show_data 1
+)
+
+floorplan
+(
+	
+	bitmap "bitmaps/icumt.png"  
+	size [23.5 5.25 0.5]
+	obstacle_return 0 
+)
+
+pioneer2dx
+(
+	name "r00"
+	pose [-9.75 -0.25 0 0]
+	fancysicklaser
+	(
+		#habilitar
+	)
+	laser_return 0
+	watchdog_timeout -1.0
+	obstacle_return 0 
+	localization "gps"
+	localization_origin [0 0 0 0]
+)
+pioneer2dx
+(
+	name "r11"
+	color "yellow"
+	pose [-9.75 -2.25 0 0]
+	fancysicklaser
+	(
+		#habilitar
+	)
+	laser_return 0
+	watchdog_timeout -1.0
+	obstacle_return 0  
+	localization "gps"
+	localization_origin [0 0 0 0]
+)
+orange(name "black1" pose [-11  0 2 0])
+orange(name "black2" pose [ 11  0 2 0])
+orange(name "black3" pose [-11 4.5 2 0])
+orange(name "black4" pose [ 11 4.5 2 0])
+orange(name "black3" pose [-11 -4.5 2 0])
+orange(name "black4" pose [ 11 -4.5 2 0])
+
+orange(name "black3" pose [ 0  4.5 2 0])
+orange(name "black4" pose [ 0 -4.5 2 0])
+
+orange(name "black3" pose [-6 4.5 2 0])
+orange(name "black4" pose [ 6 4.5 2 0])
+orange(name "black3" pose [-6 -4.5 2 0])
+orange(name "black4" pose [ 6 -4.5 2 0])
+
+
+orange(name "black3" pose [-6.5   2.5  2 0])
+orange(name "black4" pose [-6.5  -2  2 0])
+orange(name "black3" pose [-1.5   2.5  2 0])
+orange(name "black4" pose [-1.5  -2  2 0])
+orange(name "black3" pose [ 8.5   2.5  2 0])
+orange(name "black4" pose [ 8.5  -2  2 0])
+orange(name "black3" pose [ 3.5   2.5  2 0])
+orange(name "black4" pose [ 3.5  -2  2 0])
+
+
+
+#Lm[0][0]=-11; Lm[1][0]=   0; Lm[2][0]= 2;
+#Lm[0][0]= 11; Lm[1][0]=   0; Lm[2][0]= 2;
+#Lm[0][1]=-11; Lm[1][1]=  4.5; Lm[2][1]= 2; 
+#Lm[0][2]= 11; Lm[1][2]=  4.5; Lm[2][2]= 2;
+#Lm[0][3]=-11; Lm[1][3]= -4.5; Lm[2][3]= 2;
+#Lm[0][4]= 11; Lm[1][4]= -4.5; Lm[2][4]= 2;
+#Lm[0][5]=  0; Lm[1][5]=  4.5; Lm[2][5]= 2;
+#Lm[0][6]=  0; Lm[1][6]= -4.5; Lm[2][6]= 2;
+#Lm[0][7]= -6; Lm[1][7]=  4.5; Lm[2][7]= 2;
+#Lm[0][8]=  6; Lm[1][8]=  4.5; Lm[2][8]= 2;
+#Lm[0][9]= -6; Lm[1][9]= -4.5; Lm[2][9]= 2;
+#Lm[0][10]=  6; Lm[1][10]= -4.5; Lm[2][10]= 2;
+#Lm[0][11]=-6.5; Lm[1][11]= 2.5; Lm[2][11]= 2;
+#Lm[0][12]=-6.5; Lm[1][12]=-2; Lm[2][12]= 2;
+#Lm[0][13]= -1.5; Lm[1][13]= 2.5; Lm[2][13]= 2;
+#Lm[0][14]= -1.5; Lm[1][14]= -2; Lm[2][14]= 2;
+#Lm[0][15]= 8.5; Lm[1][15]= 2.5; Lm[2][15]= 2;
+#Lm[0][16]= 8.5; Lm[1][16]=  -2; Lm[2][16]= 2;
+#Lm[0][17]= 3.5; Lm[1][17]= 2.5; Lm[2][17]= 2;
+#Lm[0][18]= 3.5; Lm[1][18]=-2; Lm[2][18]= 2;
+

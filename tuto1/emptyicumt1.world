@@ -1,0 +1,117 @@
+include "map.inc"
+include "things.inc"
+include "pioneer.inc"
+include "sick.inc"
+
+window
+( 
+	size [700.000 700.000] 
+	scale 41
+	show_data 1
+)
+
+floorplan
+(
+	bitmap "bitmaps/icumt1.png"  
+	size [30 30 0.5]
+)
+
+pioneer2dx
+(
+	name "r00"
+	pose [ -12 -2 0 0]
+	fancysicklaser
+	(
+		#habilitar
+		laser_return 0
+		obstacle_return 0
+	)
+	#ctrl "wander"
+	#localization "gps"
+	#localization_origin [0 0 0 0]
+	#obstacle_return 0
+  	#laser( laser_return 0 )
+)
+
+pioneer2dx
+(
+	name "r11"
+	color "green"
+	pose [ -22 -13 0 0]
+	fancysicklaser
+	(
+		#habilitar
+		laser_return 0
+		obstacle_return 0
+	)
+	#ctrl "wander"
+	#localization "gps"
+	#localization_origin [0 0 0 0]
+	#obstacle_return 0
+  	#laser( laser_return 0 )
+)
+
+#AMBIENTE 04 (30x30)
+orange(name "black1" pose [-13 -1 2 0])
+orange(name "black2" pose [-10 -1 2 0])
+orange(name "black9" pose [ -13  -14 2 0])
+orange(name "black10" pose [-10  -14 2 0])
+orange(name "black7" pose [10  -1 2 0])
+orange(name "black8" pose [13  -1 2 0])
+orange(name "black15" pose [10  -14 2 0])
+orange(name "black16" pose [13 -14 2 0])
+orange(name "black17" pose [-14 -7 2 0])
+orange(name "black21" pose [ 14  -7 2 0])
+orange(name "black38" pose [-14 -4 2 0])
+orange(name "black37" pose [ 14 -4 2 0])
+orange(name "black20" pose [-14  -11 2 0])
+orange(name "black24" pose [14  -11 2 0])
+orange(name "black26" pose [ 1 -9 2 0])
+orange(name "black28" pose [ 4  -9 2 0])
+orange(name "black30" pose [ 7  -9 2 0])
+orange(name "black36" pose [ -1  -9 2 0])
+orange(name "black32" pose [ -4 -9 2 0])
+orange(name "black34" pose [ -7  -9 2 0])
+orange(name "black25" pose [ 1  -6 2 0])
+orange(name "black27" pose [ 4  -6 2 0])
+orange(name "black29" pose [ 7  -6 2 0])
+orange(name "black31" pose [ -1  -6 2 0])
+orange(name "black33" pose [ -4  -6 2 0])
+orange(name "black35" pose [ -7  -6 2 0])
+orange(name "black29" pose [ -8  -4 2 0])
+orange(name "black31" pose [ -8  -11 2 0])
+orange(name "black33" pose [  8  -4 2 0])
+orange(name "black35" pose [  8  -11 2 0])
+
+
+#Lm[0][0]=-13; Lm[1][0]= -1; Lm[2][0]= 2;
+#Lm[0][1]=-10; Lm[1][1]=-1; Lm[2][1]= 2;
+#Lm[0][2]=-13; Lm[1][2]=-14; Lm[2][2]= 2;
+#Lm[0][3]=-10; Lm[1][3]=-14; Lm[2][3]= 2;
+#Lm[0][4]= 10; Lm[1][4]= -1; Lm[2][4]= 2;
+#Lm[0][5]= 13; Lm[1][5]= -1; Lm[2][5]= 2;
+#Lm[0][6]= 10; Lm[1][6]= -14; Lm[2][6]= 2;
+#Lm[0][7]= 13; Lm[1][7]= -14; Lm[2][7]= 2;
+#Lm[0][8]=-14;  Lm[1][8]= -7; Lm[2][8]= 2;
+#Lm[0][9]=14;  Lm[1][9]= -7; Lm[2][9]= 2;
+#Lm[0][10]=-14; Lm[1][10]=-4; Lm[2][10]= 2;
+#Lm[0][11]=14; Lm[1][11]=-4; Lm[2][11]= 2;
+#Lm[0][12]= -14; Lm[1][12]=-11; Lm[2][12]= 2;
+#Lm[0][13]= 14; Lm[1][13]=-11; Lm[2][13]= 2;
+#Lm[0][14]=1; Lm[1][14]=-9; Lm[2][14]= 2;
+#Lm[0][15]=4;Lm[1][15]=-9; Lm[2][15]= 2;
+#Lm[0][16]=7;Lm[1][16]=-9; Lm[2][16]= 2;
+#Lm[0][17]=-1;Lm[1][17]=-9; Lm[2][17]= 2;
+#Lm[0][18]=-4;Lm[1][18]=-9; Lm[2][18]= 2;
+#Lm[0][19]=-7;Lm[1][19]=-9; Lm[2][19]= 2;
+#Lm[0][20]=1;  Lm[1][20]= -6;Lm[2][20]= 2;
+#Lm[0][21]=4;  Lm[1][21]= -6;Lm[2][21]= 2;
+#Lm[0][22]= 7;Lm[1][22]= -6; Lm[2][22]= 2;
+#Lm[0][23]= -1;Lm[1][23]= -6; Lm[2][23]= 2;
+#Lm[0][24]= -4;Lm[1][24]= -6;Lm[2][24]= 2;
+#Lm[0][25]= -7;Lm[1][25]= -6;Lm[2][25]= 2;
+#Lm[0][26]=-8;Lm[1][26]= -4;Lm[2][26]= 2;
+#Lm[0][27]=-8;Lm[1][27]= -11;Lm[2][27]= 2;
+#Lm[0][28]=8;Lm[1][28]= -4;Lm[2][28]= 2;
+#Lm[0][29]=8;Lm[1][29]= -11;Lm[2][29]= 2;
+

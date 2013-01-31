@@ -1,0 +1,138 @@
+include "map.inc"
+include "things.inc"
+include "pioneer.inc"
+include "sick.inc"
+
+window
+( 
+	size [700.000 700.000] 
+	scale 41
+	show_data 1
+)
+
+floorplan
+(
+	bitmap "bitmaps/amb4.png"  
+	size [30 15 0.5]
+)
+
+pioneer2dx
+(
+	name "r00"
+	pose [ -12 -2 0 0]
+	fancysicklaser
+	(
+		#habilitar
+		laser_return 0
+		obstacle_return 0
+	)
+	#ctrl "wander"
+	#localization "gps"
+	#localization_origin [0 0 0 0]
+	#obstacle_return 0
+  	#laser( laser_return 0 )
+)
+
+pioneer2dx
+(
+	name "r11"
+	color "green"
+	pose [ -12 -13 0 0]
+	fancysicklaser
+	(
+		#habilitar
+		laser_return 0
+		obstacle_return 0
+	)
+	#ctrl "wander"
+	#localization "gps"
+	#localization_origin [0 0 0 0]
+	#obstacle_return 0
+  	#laser( laser_return 0 )
+)
+
+#AMBIENTE 04 (30x30)
+orange(name "black1" pose [-13 -1 2 0])
+orange(name "black2" pose [-10  -1 2 0])
+orange(name "black3" pose [-5  -1 2 0])
+orange(name "black4" pose [ -3  -1 2 0])
+orange(name "black5" pose [ 1  -1 2 0])
+orange(name "black6" pose [4 -1 2 0])
+orange(name "black7" pose [10  -1 2 0])
+orange(name "black8" pose [12  -1 2 0])
+
+orange(name "black9" pose [ -13  -14 2 0])
+orange(name "black10" pose [-10  -14 2 0])
+orange(name "black11" pose [-5 -14 2 0])
+orange(name "black12" pose [-3  -14 2 0])
+orange(name "black13" pose [1  -14 2 0])
+orange(name "black14" pose [4  -14 2 0])
+orange(name "black15" pose [10  -14 2 0])
+orange(name "black16" pose [12 -14 2 0])
+
+
+orange(name "black17" pose [-14 -8 2 0])
+orange(name "black18" pose [-14 -5 2 0])
+orange(name "black19" pose [-14  -10 2 0])
+orange(name "black20" pose [-14  -12 2 0])
+orange(name "black21" pose [ 14  -8 2 0])
+orange(name "black22" pose [14 -5 2 0])
+orange(name "black23" pose [14 -10 2 0])
+orange(name "black24" pose [14  -12 2 0])
+
+
+orange(name "black25" pose [ -7  -5 2 0])
+orange(name "black26" pose [ -7 -10 2 0])
+orange(name "black27" pose [ 1  -5 2 0])
+orange(name "black28" pose [ 1  -10 2 0])
+orange(name "black29" pose [ 8  -5 2 0])
+orange(name "black30" pose [ 8  -10 2 0])
+
+orange(name "black31" pose [ -9  -5 2 0])
+orange(name "black32" pose [ -9 -10 2 0])
+orange(name "black33" pose [ -1  -5 2 0])
+orange(name "black34" pose [ -1  -10 2 0])
+orange(name "black35" pose [ 6  -5 2 0])
+orange(name "black36" pose [ 6  -10 2 0])
+orange(name "black37" pose [ 14 -3 2 0])
+orange(name "black38" pose [-14 -3 2 0])
+
+#Lm(0,0)=-13; Lm(1,0)= -1; Lm(2,0)= 2;
+#Lm(0,1)=-10;  Lm(1,1)=-1; Lm(2,1)= 2;
+#Lm(0,2)= -5;  Lm(1,2)=-1; Lm(2,2)= 2;
+#Lm(0,3)= -3; Lm(1,3)= -1; Lm(2,3)= 2;
+#Lm(0,4)=  1; Lm(1,4)= -1; Lm(2,4)= 2;
+#Lm(0,5)=  4; Lm(1,5)= -1; Lm(2,5)= 2;
+#Lm(0,6)= 10; Lm(1,6)= -1; Lm(2,6)= 2;
+#Lm(0,7)= 12; Lm(1,7)= -1; Lm(2,7)= 2;
+#Lm(0,8)=-13;  Lm(1,8)= -14; Lm(2,8)= 2;
+#Lm(0,9)=-10;  Lm(1,9)= -14; Lm(2,9)= 2;
+#Lm(0,10)=-5;Lm(1,10)=-14; Lm(2,10)= 2;
+#Lm(0,11)=-3; Lm(1,11)=-14; Lm(2,11)= 2;
+#Lm(0,12)= 1; Lm(1,12)=-14; Lm(2,12)= 2;
+#Lm(0,13)= 4; Lm(1,13)=-14; Lm(2,13)= 2;
+#Lm(0,14)=10; Lm(1,14)=-14; Lm(2,14)= 2;
+#Lm(0,15)=12;Lm(1,15)=-14; Lm(2,15)= 2;
+#Lm(0,16)=-14;Lm(1,16)=-8; Lm(2,16)= 2;
+#Lm(0,17)=-14;Lm(1,17)=-5; Lm(2,17)= 2;
+#Lm(0,18)=-14;Lm(1,18)=-10; Lm(2,18)= 2;
+#Lm(0,19)=-14;Lm(1,19)=-12; Lm(2,19)= 2;
+#Lm(0,20)=14;  Lm(1,20)= -8;Lm(2,20)= 2;
+#Lm(0,21)=14;  Lm(1,21)= -5;Lm(2,21)= 2;
+#Lm(0,22)= 14;Lm(1,22)= -10; Lm(2,22)= 2;
+#Lm(0,23)= 14;Lm(1,23)= -12; Lm(2,23)= 2;
+#Lm(0,24)= -7;Lm(1,24)= -5;Lm(2,24)= 2;
+#Lm(0,25)= -7;Lm(1,25)= -10;Lm(2,25)= 2;
+#Lm(0,26)=1;Lm(1,26)= -5;Lm(2,26)= 2;
+#Lm(0,27)=1;Lm(1,27)= -10;Lm(2,27)= 2;
+#Lm(0,28)=8;Lm(1,28)= -5;Lm(2,28)= 2;
+#Lm(0,29)=8;Lm(1,29)= -10;Lm(2,29)= 2;
+#Lm(0,30)= -9;Lm(1,30)= -5;Lm(2,30)= 2;
+#Lm(0,31)= -9;Lm(1,31)= -10;Lm(2,31)= 2;
+#Lm(0,32)=  -1;Lm(1,32)= -5;Lm(2,32)= 2;
+#Lm(0,33)=  -1;Lm(1,33)= -10;Lm(2,33)= 2;
+#Lm(0,34)=  6;Lm(1,34)= -5;Lm(2,34)= 2;
+#Lm(0,35)=  6;Lm(1,35)= -10;Lm(2,35)= 2;
+#Lm(0,36)=  14;Lm(1,36)= -3;Lm(2,36)= 2;
+#Lm(0,37)= -14;Lm(1,37)= -3;Lm(2,37)= 2;
+

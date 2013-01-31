@@ -1,0 +1,90 @@
+include "map.inc"
+include "things.inc"
+include "pioneer.inc"
+include "sick.inc"
+
+window
+( 
+	size [700.000 700.000] 
+	scale 41
+	show_data 1
+)
+
+floorplan
+(
+	bitmap "bitmaps/amb2.png"  
+	size [50 50 0.5]
+)
+
+pioneer2dx
+(
+	name "r00"
+	pose [-9.5 -9.5 0 0]
+	fancysicklaser
+	(
+		#habilitar
+	)
+	#ctrl "wander"
+	#localization "gps"
+	#localization_origin [0 0 0 0]
+)
+pioneer2dx
+(
+	name "r11"
+	pose [ 9.5 -9.5 0 0]
+	fancysicklaser
+	(
+		#habilitar
+	)
+	#ctrl "wander"
+	#localization "gps"
+	#localization_origin [0 0 0 0]
+)
+
+
+orange(name "black1" pose [-15 -1 2 0])
+orange(name "black4" pose [-5  -1 2 0])
+orange(name "black7" pose [ 3  -1 2 0])
+orange(name "black10" pose [ 10  -1 2 0])
+orange(name "black13" pose [ 20  -1 2 0])
+
+orange(name "black2" pose [-24 -6 2 0])
+orange(name "black3" pose [-10  -6 2 0])
+orange(name "black5" pose [-8  -6 2 0])
+orange(name "black6" pose [ -2  -6 2 0])
+orange(name "black8" pose [ 0  -6 2 0])
+orange(name "black9" pose [6 -6 2 0])
+orange(name "black11" pose [8  -6 2 0])
+orange(name "black12" pose [ 14  -6 2 0])
+orange(name "black14" pose [ 16  -6 2 0])
+orange(name "black15" pose [ 24  -6 2 0])
+
+orange(name "black31" pose [-18 -13 2 0])
+orange(name "black32" pose [-10 -11 2 0])
+orange(name "black33" pose [-10  -14 2 0])
+orange(name "black34" pose [ -2  -11 2 0])
+orange(name "black35" pose [ -2  -14 2 0])
+orange(name "black36" pose [7 -11 2 0])
+orange(name "black37" pose [7  -14 2 0])
+orange(name "black38" pose [ 14  -11 2 0])
+orange(name "black39" pose [ 14  -14 2 0])
+orange(name "black40" pose [ 23  -11 2 0])
+orange(name "black41" pose [ 23  -14 2 0])
+
+orange(name "black16" pose [-23 -20 2 0])
+orange(name "black17" pose [-17 -24 2 0])
+orange(name "black18" pose [-10  -20 2 0])
+orange(name "black19" pose [ -8  -20 2 0])
+orange(name "black20" pose [ -6  -24 2 0])
+orange(name "black21" pose [-2 -20 2 0])
+orange(name "black22" pose [1  -20 2 0])
+orange(name "black23" pose [ 5  -20 2 0])
+orange(name "black24" pose [ 3  -24 2 0])
+orange(name "black25" pose [ 8  -20 2 0])
+orange(name "black26" pose [ 14  -20 2 0])
+orange(name "black27" pose [ 9  -24 2 0])
+orange(name "black28" pose [ 16  -20 2 0])
+orange(name "black29" pose [ 22  -20 2 0])
+orange(name "black30" pose [ 19  -24 2 0]
+
+
