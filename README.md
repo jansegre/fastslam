@@ -1,0 +1,5 @@
+Dependencias
+============
+
+- Player/Stage
+- OpenCV
