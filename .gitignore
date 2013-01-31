@@ -2,4 +2,4 @@
 *.d
 *.o
 *.pgm
-ferro.txt
+f*.txt
