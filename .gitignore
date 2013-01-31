@@ -1,0 +1,5 @@
+*.mk
+*.d
+*.o
+*.pgm
+ferro.txt
